@@ -1,4 +1,4 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.exceptions;
 
 public class UnauthorizedUser extends RuntimeException{
     public UnauthorizedUser(String msg) {

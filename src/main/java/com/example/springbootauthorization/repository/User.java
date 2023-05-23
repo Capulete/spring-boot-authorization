@@ -1,4 +1,4 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.repository;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,9 +1,14 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.service;
+
+import com.example.springbootauthorization.repository.Authorities;
+import com.example.springbootauthorization.exceptions.InvalidCredentials;
+import com.example.springbootauthorization.exceptions.UnauthorizedUser;
+import com.example.springbootauthorization.repository.UserRepository;
 
 import java.util.List;
 
 public class AuthorizationService {
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public AuthorizationService(UserRepository userRepository) {
         this.userRepository = userRepository;

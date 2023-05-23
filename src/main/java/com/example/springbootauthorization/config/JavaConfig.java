@@ -1,5 +1,7 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.config;
 
+import com.example.springbootauthorization.repository.UserRepository;
+import com.example.springbootauthorization.service.AuthorizationService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

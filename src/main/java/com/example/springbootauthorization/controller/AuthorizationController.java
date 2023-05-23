@@ -1,5 +1,9 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.controller;
 
+import com.example.springbootauthorization.repository.Authorities;
+import com.example.springbootauthorization.exceptions.InvalidCredentials;
+import com.example.springbootauthorization.exceptions.UnauthorizedUser;
+import com.example.springbootauthorization.service.AuthorizationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -11,7 +15,7 @@ import java.util.List;
 
 @RestController
 public class AuthorizationController {
-    AuthorizationService service;
+    private final AuthorizationService service;
 
     public AuthorizationController(AuthorizationService service) {
         this.service = service;

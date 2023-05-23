@@ -1,4 +1,6 @@
-package com.example.springbootauthorization;
+package com.example.springbootauthorization.repository;
+
+import com.example.springbootauthorization.exceptions.UnauthorizedUser;
 
 import java.util.HashMap;
 import java.util.List;
